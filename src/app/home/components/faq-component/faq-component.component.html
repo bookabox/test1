@@ -1,0 +1,324 @@
+<div class="divider" id="faq"></div>
+<div class="container">
+  <div class="col-sm-10 col-sm-offset-1">
+    <div class="page-header text-center">
+      <h1>Frequently Asked Questions</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+<div class="clearfix"> 
+	<div class="col-md-4">
+		<div class="nav-side-menu">
+    	<div class="brand">Faq - Book-A-Box</div>
+    	<i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+        <div class="menu-list">
+            <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                  <a (click)="setTab(0)">
+                  <i class="fa fa-dashboard fa-lg"></i> How it works
+                  </a>
+                </li>
+                <li  data-toggle="collapse" data-target="#products" class="collapsed active" (click)="setTab(1)">
+                  <a id="action-1"><i class="fa fa-gift fa-lg"></i> Storage</a><i class="fa fa-arrow-right fa-lg"></i>
+                </li>
+                <ul class="sub-menu collapse" id="products">
+                    <li class="active"><a  (click)="setTab(1)">CSS3 Animation</a></li>
+                    <li><a href="#">General</a></li>
+                    <li><a href="#">Buttons</a></li>
+                    <li><a href="#">Tabs & Accordions</a></li>
+                    <li><a href="#">Typography</a></li>
+                    <li><a href="#">FontAwesome</a></li>
+                    <li><a href="#">Slider</a></li>
+                    <li><a href="#">Panels</a></li>
+                    <li><a href="#">Widgets</a></li>
+                    <li><a href="#">Bootstrap Model</a></li>
+                </ul>
+                <li data-toggle="collapse" data-target="#service" class="collapsed">
+                  <a href="#"><i class="fa fa-globe fa-lg"></i> Packing <span class="arrow"></span></a>
+                </li>  
+                <ul class="sub-menu collapse" id="service">
+                  <li>New Service 1</li>
+                  <li>New Service 2</li>
+                  <li>New Service 3</li>
+                </ul>
+                <li data-toggle="collapse" data-target="#new" class="collapsed">
+                  <a href="#"><i class="fa fa-car fa-lg"></i> Insurance <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="new">
+                  <li>New New 1</li>
+                  <li>New New 2</li>
+                  <li>New New 3</li>
+                </ul>
+                 <li>
+                  <a href="#">
+                  <i class="fa fa-user fa-lg"></i> Delivery / Collections
+                  </a>
+                  </li>
+                 <li>
+                  <a href="#">
+                  <i class="fa fa-users fa-lg"></i> Pricing & Payment
+                  </a>
+                </li>
+            </ul>
+     </div> <!-- menu-list -->
+</div>  <!-- nav-side-menu -->
+</div> <!-- col-md-4 -->
+
+<!--
+<div class="col-md-8" *ngIf="tab==0">
+					<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="heading4">
+					<h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+					How does it work?<i class="indicator pull-right"></i>
+					</a>
+					</h4>
+					</div>
+					<div id="collapse4" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body">
+					<p><strong>Select storage and schedule appointments.</strong> Pick your preferred date and timeslot where we?ll drop-off empty boxes and collect your items for storage. Drop-off and collection of new items are always free! (Except for large, bulky items and furniture.)<br>
+					<br>
+					<strong>Pack and snap a picture. </strong>We?ll wait for up to 15 minutes while you pack (if you?ve ordered 3 StorageTree boxes or less), or you can schedule a later pick-up within the next 14 days. Snap a picture of your items and update your storage description on your StorageTree account. This helps you retrieve items easily in the future.&nbsp;<br>
+					<br>
+					<strong>Store. </strong>Once everything?s packed, our fleet of professionally-trained drivers will transport them to our secure storage facilities.<br>
+					<br>
+					<strong>Deliver.</strong> Need something back? Login to your account and select the items you want to retrieve. We?ll have them delivered back as early as within 2 working days. We will also drop you an email and SMS to help you remember your appointments.</p>
+
+					<p>&nbsp;</p>
+
+					</div>
+					</div>
+					</div>
+					<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="heading6">
+					<h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+					What does my Book-A-Box Account do?<i class="indicator pull-right"></i>
+					</a>
+					</h4>
+					</div>
+					<div id="collapse6" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body">
+					<p>Your StorageTree account is your online organiser for your stored items!</p>
+
+					<ul>
+					<li>It shows the real-time status of your boxes (in storage, pending or retrieved)</li>
+					<li>It maintains an inventory of your items where you can upload pictures, name your boxes, and describe what?s inside</li>
+					<li>It allows you to schedule new orders or retrieval of boxes</li>
+					</ul>
+
+					</div>
+					</div>
+					</div>
+					<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="heading7">
+					<h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+					Will my items be stored safely? What kind of security does Book-A-Box have?<i class="indicator pull-right"></i>
+					</a>
+					</h4>
+					</div>
+					<div id="collapse7" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body">
+					<p>Safety and security are part of StorageTree?s promise to our customers. We work carefully to ensure that your boxes and items are safe from fire (our warehouse meets the SCDF safety requirements), moisture, dust, and of course, damage. Our warehouse has a security alarm system (linked directly to the police), 24/7 CCTV monitoring, break sensors on all doors, and a dedicated team of our very own warehouse operatives.&nbsp;</p>
+
+					</div>
+					</div>
+					</div>
+					<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="heading8">
+					<h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+					Can I visit the storage facility and access my items?<i class="indicator pull-right"></i>
+					</a>
+					</h4>
+					</div>
+					<div id="collapse8" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body">
+					<p>For security reasons, we are unable to allow public access to our storage facilities. Access and handling are only performed by our professionally-trained team to ensure the safety and security of our customer?s stored items.</p>
+
+					</div>
+					</div>
+					</div>
+					<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="heading9">
+					<h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="false" aria-controls="collapse9">
+					Will my boxes be opened or checked?<i class="indicator pull-right"></i>
+					</a>
+					</h4>
+					</div>
+					<div id="collapse9" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body">
+					<p>As we value our customer's privacy, it is our policy to keep your boxes sealed as much as possible. However, in rare occasions, if boxes are too heavy for our team, we might have to open one of your boxes. We might also open your boxes if your items breach our <a href="http://www.storagetree.sg/upload/ckimage/files/Terms_Conditions_StorageTree%20(PDF).pdf" target="_blank">Terms and Conditions</a>.</p>
+
+					</div>
+					</div>
+					</div>
+					<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="heading10">
+					<h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse10" aria-expanded="false" aria-controls="collapse10">
+					What are your operating hours?<i class="indicator pull-right"></i>
+					</a>
+					</h4>
+					</div>
+					<div id="collapse10" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body">
+					<p>Our customer service and delivery hours are:</p>
+
+					<p>Monday to Friday, 9am to 5pm</p>
+
+					<p>Saturday, 9am to 12.30pm</p>
+
+					<p>We are closed on Sundays and public holidays. Please drop us an e-mail at <a href="mailto:hello@storagetree.sg">hello@storagetree.sg</a> during non-working hours and we will get back to you as soon as possible.</p>
+
+					</div>
+					</div>
+					</div>
+					<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="heading11">
+					<h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="false" aria-controls="collapse11">
+					Where is Book-A-Box available?<i class="indicator pull-right"></i>
+					</a>
+					</h4>
+					</div>
+					<div id="collapse11" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body">
+					<p>We currently serve all areas in Singapore, except for no-go zones. Click <a href="http://www.storagetree.sg/upload/ckimage/files/StorageTree-No-Go-Zones.pdf" target="_blank">here</a> for a complete list of prohibited areas.</p>
+					</div>
+					</div>
+					</div>
+-->
+<div class="col-md-8" *ngIf="tab==1">
+					<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="heading4">
+					<h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+					How does it work - 1?<i class="indicator pull-right"></i>
+					</a>
+					</h4>
+					</div>
+					<div id="collapse4" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body">
+					<p><strong>Select storage and schedule appointments.</strong> Pick your preferred date and timeslot where we?ll drop-off empty boxes and collect your items for storage. Drop-off and collection of new items are always free! (Except for large, bulky items and furniture.)<br>
+					<br>
+					<strong>Pack and snap a picture. </strong>We?ll wait for up to 15 minutes while you pack (if you?ve ordered 3 StorageTree boxes or less), or you can schedule a later pick-up within the next 14 days. Snap a picture of your items and update your storage description on your StorageTree account. This helps you retrieve items easily in the future.&nbsp;<br>
+					<br>
+					<strong>Store. </strong>Once everything?s packed, our fleet of professionally-trained drivers will transport them to our secure storage facilities.<br>
+					<br>
+					<strong>Deliver.</strong> Need something back? Login to your account and select the items you want to retrieve. We?ll have them delivered back as early as within 2 working days. We will also drop you an email and SMS to help you remember your appointments.</p>
+
+					<p>&nbsp;</p>
+
+					</div>
+					</div>
+					</div>
+					<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="heading6">
+					<h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+					What does my Book-A-Box Account do?<i class="indicator pull-right"></i>
+					</a>
+					</h4>
+					</div>
+					<div id="collapse6" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body">
+					<p>Your StorageTree account is your online organiser for your stored items!</p>
+
+					<ul>
+					<li>It shows the real-time status of your boxes (in storage, pending or retrieved)</li>
+					<li>It maintains an inventory of your items where you can upload pictures, name your boxes, and describe what?s inside</li>
+					<li>It allows you to schedule new orders or retrieval of boxes</li>
+					</ul>
+
+					</div>
+					</div>
+					</div>
+					<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="heading7">
+					<h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+					Will my items be stored safely? What kind of security does Book-A-Box have?<i class="indicator pull-right"></i>
+					</a>
+					</h4>
+					</div>
+					<div id="collapse7" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body">
+					<p>Safety and security are part of StorageTree?s promise to our customers. We work carefully to ensure that your boxes and items are safe from fire (our warehouse meets the SCDF safety requirements), moisture, dust, and of course, damage. Our warehouse has a security alarm system (linked directly to the police), 24/7 CCTV monitoring, break sensors on all doors, and a dedicated team of our very own warehouse operatives.&nbsp;</p>
+
+					</div>
+					</div>
+					</div>
+					<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="heading8">
+					<h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+					Can I visit the storage facility and access my items?<i class="indicator pull-right"></i>
+					</a>
+					</h4>
+					</div>
+					<div id="collapse8" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body">
+					<p>For security reasons, we are unable to allow public access to our storage facilities. Access and handling are only performed by our professionally-trained team to ensure the safety and security of our customer?s stored items.</p>
+
+					</div>
+					</div>
+					</div>
+					<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="heading9">
+					<h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="false" aria-controls="collapse9">
+					Will my boxes be opened or checked?<i class="indicator pull-right"></i>
+					</a>
+					</h4>
+					</div>
+					<div id="collapse9" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body">
+					<p>As we value our customer's privacy, it is our policy to keep your boxes sealed as much as possible. However, in rare occasions, if boxes are too heavy for our team, we might have to open one of your boxes. We might also open your boxes if your items breach our <a href="http://www.storagetree.sg/upload/ckimage/files/Terms_Conditions_StorageTree%20(PDF).pdf" target="_blank">Terms and Conditions</a>.</p>
+
+					</div>
+					</div>
+					</div>
+					<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="heading10">
+					<h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse10" aria-expanded="false" aria-controls="collapse10">
+					What are your operating hours?<i class="indicator pull-right"></i>
+					</a>
+					</h4>
+					</div>
+					<div id="collapse10" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body">
+					<p>Our customer service and delivery hours are:</p>
+
+					<p>Monday to Friday, 9am to 5pm</p>
+
+					<p>Saturday, 9am to 12.30pm</p>
+
+					<p>We are closed on Sundays and public holidays. Please drop us an e-mail at <a href="mailto:hello@storagetree.sg">hello@storagetree.sg</a> during non-working hours and we will get back to you as soon as possible.</p>
+
+					</div>
+					</div>
+					</div>
+					<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="heading11">
+					<h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="false" aria-controls="collapse11">
+					Where is Book-A-Box available?<i class="indicator pull-right"></i>
+					</a>
+					</h4>
+					</div>
+					<div id="collapse11" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body">
+					<p>We currently serve all areas in Singapore, except for no-go zones. Click <a href="http://www.storagetree.sg/upload/ckimage/files/StorageTree-No-Go-Zones.pdf" target="_blank">here</a> for a complete list of prohibited areas.</p>
+					</div>
+					</div>
+					</div>
+
+
+  </div> <!-- clearfix -->
+</div> <!-- container -->
